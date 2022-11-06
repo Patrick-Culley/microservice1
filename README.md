@@ -6,8 +6,8 @@ Microservice for student project for CS 361
 Setup virtual environment 
 - Create a new local directory & change into directory
 - Create venv (virtual environment): ```python -m venv venv```
-- Change into virtual environment dir: ```cd venv```
-- Copy server.py file to ```venv``` folder
+- Change into virtual environment directory: ```cd venv```
+- Copy server.py file to ```venv``` directory
 - Activate virtual enviroment: ```.\Scripts\activate```
 - Install Flask: ```pip install flask```
 
