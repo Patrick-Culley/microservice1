@@ -1,7 +1,7 @@
 # Class contains links to the following units of measurement: 
 # inch, foot, meter, kilometer, centimeter, millimeter, micrometer, nanometer, mile, and yard
 import json
-from flask import Flask
+from flask import Flask, jsonify
 app = Flask(__name__)
 
 class Measurement:
@@ -26,7 +26,9 @@ class Measurement:
 @app.route('/units/<unit>', methods=["GET"])
 def get_unit_rest(unit): 
     unit = Measurement(unit)   
-    return json.dumps({'url': unit.get_measurement()})
+    response = jsonify(url=unit.get_measurement())
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
 
 if __name__ == '__main__':
     app.run()   
