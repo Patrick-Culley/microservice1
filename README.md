@@ -7,6 +7,7 @@ Setup virtual environment
 - Create a new local directory & change into directory
 - Create venv (virtual environment): ```python -m venv venv```
 - Change into virtual environment dir: ```cd venv```
+- Copy server.py file to ```venv``` folder
 - Activate virtual enviroment: ```.\Scripts\activate```
 - Install Flask: ```pip install flask```
 
